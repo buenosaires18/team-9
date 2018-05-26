@@ -31,9 +31,9 @@ const FirstRoute = () => (
 );
 
 const SecondRoute = () => (
-  <View style={[styles.container, { backgroundColor: '#00aeef', alignItems:"center", justifyContent:"center" }]}>
-      <Text style={styles.paragraph, {fontSize: 24}}>
-          Video here!
+ <View style={[styles.container, { backgroundColor: '#00aeef', alignItems:"center", justifyContent:"center" }]}>
+      <Text style={(styles.paragraph, {fontSize: 24, marginLeft:20, marginRight:20})}>
+          Video tutorial on how to be a mentor
         </Text>
   </View>
 );
