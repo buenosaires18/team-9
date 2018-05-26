@@ -9,6 +9,7 @@
     "expo": "^24.0.0",
     "react": "16.0.0",
     "react-native": "https://github.com/expo/react-native/archive/sdk-24.0.0.tar.gz",
-    "react-native-tab-view": "0.0.67"
+    "react-native-tab-view": "0.0.67",
+    "tcomb-form-native": "0.6.13"
   }
 }
