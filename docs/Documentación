@@ -8,6 +8,10 @@ Es una aplicación estática con videos incrustados, que funciona de manera offl
 El sistema es totalmente original.
 La única feature que requiere conexión a internet es el envío de las encuestas y la inscripción.
 
+Tecnología y herramientas usadas
+Para los mockups de la aplicación utilizamos la herramienta Balsamiq.
+Snack expo fue la herramienta que utilizamos para configurar el prototipo de nuestra aplicación, es una herramienta online que permite la ejecución de demostración de un código determinado para analizar su comportamiento y prevenir posibles fallos.
+
 Procedimientos de instalación
 Es necesario tener el paquete .apk o bien descargar la aplicación de algún appstore (por el momento no logramos subirla).
 
