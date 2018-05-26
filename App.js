@@ -1,6 +1,6 @@
 import React from 'react';
-import { Constants, Video } from 'expo';
-import { View, StatusBar, StyleSheet, Button, Alert, Image, ScrollView } from 'react-native';
+import { Constants } from 'expo';
+import { View, StatusBar, StyleSheet, Image, ScrollView, Text} from 'react-native';
 import { TabViewAnimated, TabBar, SceneMap } from 'react-native-tab-view'; // 0.0.67
 
 import t from 'tcomb-form-native'; // 0.6.13
@@ -18,61 +18,57 @@ const User = t.struct({
   cp: t.String
 });
 
+
 const FirstRoute = () => (
-  <View style={[styles.container, { backgroundColor: '#ff4081' }]} >
-  
+  <View style={[styles.container, { backgroundColor: '#ADD8E6' }]} >
       <View style={[styles.imageContainer, { backgroundColor: '#ff4081' }]}>
       <Image source={{uri: 'https://image.ibb.co/cD34Fo/BE_A_MENTOR_logo.png'}}
       style={styles.imageCanvas} />
-      </View>
-      <View style={[styles.buttonContainer, { backgroundColor: '#ff4081' }]}>
-      <Button onPress={() => {
-       Alert.alert('Video here!');
-      }}
-      title="Press Me"
-      color="#841584"
-      accessibilityLabel="Learn more about this purple button"
-      />
+      
       </View>
       </View>
+
 );
+
 const SecondRoute = () => (
-  <View style={[styles.container, { backgroundColor: '#673ab7' }]} >
-    <ScrollView>
-    <Form type={User} />
-    </ScrollView>
+  <View style={[styles.container, { backgroundColor: '#00aeef', alignItems:"center", justifyContent:"center" }]}>
+      <Text style={styles.paragraph, {fontSize: 24}}>
+          Video here!
+        </Text>
   </View>
 );
 
 const ThirdRoute = () => (
-  <View style={[styles.container, { backgroundColor: '#00aeef' }]}>
- 
-      <Video
-        source={{ uri: 'http://d23dyxeqlo5psv.cloudfront.net/big_buck_bunny.mp4' }}
-        
-        // pause not working
-        paused={this.state.paused}
-      onLoad={() => {
-      this.setState({
-        paused: true
-      });
-        }}
-        
-        rate={1.0}
-        volume={1.0}
-        muted={false}
-        resizeMode="cover"
-        shouldPlay
-        isLooping
-        style={{ width: 300, height: 300 }}
-      />
+  <View style={[styles.container, { backgroundColor: '#00aeef', alignItems:"center", justifyContent:"center" }]} >
+        <Text style={styles.paragraph, {fontSize: 24, marginLeft:20, marginRight:20}}>
+          Here we explain the role of a mentor
+        </Text>
+  </View>
+);
+
+const FourRoute = () => (
+  <View style={[styles.container, { backgroundColor: '#FFFFFF' }]} >
+  <View style={[styles.container, { backgroundColor: '#FFFFFF', left:20, right:20, justifyContent:"center" }]} >
+    <ScrollView>
+    <Form type={User} />
+    </ScrollView>
+  </View>
+  </View>
+);
+
+const FifthRoute = () => (
+  <View style={[styles.container, { backgroundColor: '#00aeef', alignItems:"center", justifyContent:"center" }]} >
+          <Text style={styles.paragraph, {fontSize: 24}}>
+          Here we remember mentors each of 
+          the student formation stages
+        </Text>
   </View>
 );
 
 export default class TabViewExample extends React.Component {
   state = {
     index: 0,
-    routes: [{ key: '1', title: 'Stage 1' }, { key: '2', title: 'Stage 2' }, { key: '3', title: 'Stage 3' }],
+    routes: [{ key: '1', title: 'Intro' }, { key: '2', title: 'Video' }, { key: '3', title: 'Mentoring' }, { key: '4', title: 'Form' }, { key: '5', title: 'Students' }],
   };
 
   _handleIndexChange = index => {
@@ -85,6 +81,8 @@ export default class TabViewExample extends React.Component {
     '1': FirstRoute,
     '2': SecondRoute,
     '3': ThirdRoute,
+    '4': FourRoute,
+    '5': FifthRoute,
   });
 
   render() {
@@ -109,16 +107,18 @@ export default class TabViewExample extends React.Component {
 }
 
 const styles = StyleSheet.create({
+  paragraph: {
+    alignSelf: "center",
+  },
   container: {
     flex: 1,
   },
   imageContainer: {
     height: '90%'
   },
-  buttonContainer: {
-    height: '10%'
-  },
-  imageCanvas: {
+    imageCanvas: {
     flex: 1,
   }
 });
+
+
