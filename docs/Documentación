@@ -1,0 +1,13 @@
+Definición general del proyecto de software
+El software que desarrollamos es una forma automatizada de inscribirse en el padrón de mentores. Al inscribirse, es necesario que la persona que fue mentor del solicitante apruebe la candidatura para formalizar la inscripción. Con esto, logramos ampliar la cantidad de mentores, fomentando así tanto el nexo comunicativo entre la ONG y los alumnos, como la cantidad de personas a las que se llega.
+El sistema consiste en hacer que los que finalizan el ciclo técnico-profesional puedan convertirse en mentores de la Fundación Pescar.
+Para ésto, se apela a las ganas de ayudar de los alumnos y se les brinda un pequeño “handbook” para que tengan el apoya-memoria necesario en su nuevo rol de Mentores de la ONG.
+
+Especificación de requerimientos
+Es una aplicación estática con videos incrustados, que funciona de manera offline, utilizando muy poco espacio de almacenamiento en la memoria del teléfono. Está pensada de esta manera para que pueda utilizarse sin problema alguno en los dispositivos de las gamas mas bajas.
+El sistema es totalmente original.
+La única feature que requiere conexión a internet es el envío de las encuestas y la inscripción.
+
+Procedimientos de instalación
+Es necesario tener el paquete .apk o bien descargar la aplicación de algún appstore (por el momento no logramos subirla).
+
